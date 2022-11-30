@@ -1,0 +1,106 @@
+body{
+	font-family: 'PT Sans',sans-serif;
+/* Created with https://www.css-gradient.com */
+background: #26aceb;
+/* background: -webkit-linear-gradient(top right, #2B9BCD, #FFFFFF);
+background: -moz-linear-gradient(top right, #2B9BCD, #FFFFFF);
+background: linear-gradient(to bottom left, #2B9BCD, #FFFFFF); */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+#menu{
+	width: 35px;
+	height: 30px;
+	cursor: pointer;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.bar{
+	height: 5px;
+	width: 100%;
+	background-color: #48bbf0;
+	display: block;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+#bar1{
+	transform: translateY(-4px);
+}
+#bar3{
+	transform: translateY(4px);
+}
+
+.nav li a{
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 50px;
+	background: #48bbf0;
+	width: 100%;
+	border-radius: 50px;
+}
+.nav li a:hover{
+	font-weight: bold;
+}
+.nav li{
+	list-style: none;
+	padding: 16px 0;
+}
+.nav{
+	padding: 0;
+	margin: 0;
+	transition: 0.3s ease;
+	display: none;
+	margin-bottom: 20px;
+}
+.menu-bg{
+	
+    z-index: 1;
+	width: 0;
+	height: 0;
+	margin: 0px 0 0px 0px;
+	-webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+	transition: 0.3s ease; 
+    
+}
+#menu-bar{
+	z-index: 2;	
+	background: #fff;
+	width: 300px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+	border-radius: 20px;
+}
+.change-bg{
+	transform: translate(-60%,-30%);
+}
+.change .bar{
+	background-color: #48bbf0;
+}
+.change #bar1{
+	transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3{
+	transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2{
+	opacity: 0;
+}
+.change{
+	display: block;
+}
+
+h1 {
+	margin:0;
+	padding:0;
+    margin-top: 20px;
+    padding: 0px;
+    color: #333;
+	font-weight: 400;
+}
